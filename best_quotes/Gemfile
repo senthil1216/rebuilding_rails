@@ -1,5 +1,7 @@
 # best_quotes/Gemfile
 
 source 'https://rubygems.org'
+gem 'rubocop', group: 'development'
 gem 'rulers', path: '../rulers' # Your gem name
 gem 'puma'
+gem 'pry', '~> 0.13.1'

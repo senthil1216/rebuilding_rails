@@ -1,10 +1,11 @@
 require 'rulers'
 
+$LOAD_PATH << File.join(File.dirname(__FILE__),
+                        '..', 'app',
+                        'controllers')
+require 'quotes_controller'
+
 module BestQuotes
   class Application < Rulers::Application
-    def call(_env)
-      super => [status_code, response_type, [body]]
-      [status_code, response_type, ["#{body} - And from Best Quotes retrieval"]]
-    end
   end
 end
